@@ -2,15 +2,19 @@
 
 Captures real-time webcam feed.
 Detects faces and compares them with stored images using pixel-wise difference.
-If recognized, shows "Access Granted: Name (ID)" (Green box).
-If unknown, shows "Access Denied" (Red box).
-Logs attendance to attendance.csv with Employee ID, Name, Date, Time.press "q" to  exit the terminal
+If recognized:
+  Displays "Access Granted: Name (ID)" with a Green box.
+  Logs attendance to attendance.csv with Employee ID, Name, Date, and Time.
+If unknown, it:
+  Displays "Access Denied" with a Red box.
 
- press "q" to exit the camera
 
-why its better???
--No face_recognition, face, or LBPH modules used— its just pure OpenCV.
--Simple image comparison method instead of ML-based recognition.
--Works without training, just saves faces and compares them.
--Threshold-based matching to handle variations.
--Logs employee attendance in CSV.
+Press "q" to exit the camera feed.
+
+
+ Why This is Better?
+  ✔ No ML-based libraries like face_recognition, face, or LBPH.
+  ✔ Uses only OpenCV for face detection and image comparison.
+  ✔ Simple threshold-based image matching (no training required).
+  ✔ Lightweight & efficient compared to deep-learning models.
+  ✔ CSV-based logging ensures easy attendance tracking.
